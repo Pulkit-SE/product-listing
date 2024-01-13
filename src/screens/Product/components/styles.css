@@ -1,0 +1,116 @@
+/* styles.css */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 16px;
+}
+
+.product-grid-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-card img {
+  border-radius: 4px;
+  height: 200px;
+  width: 100%;
+}
+
+.grid-btn {
+  width: 100px;
+}
+
+.grid-btn-next {
+  width: 100px;
+  margin-left: 8px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  box-shadow: inset 0 -3em 3em white, 0 0 0 2px white, 0.3em 0.3em 1em gray;
+}
+
+.header-item {
+  margin: 16px 48px;
+}
+
+.filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px;
+  background-color: rgb(200, 200, 200);
+}
+
+.min-range {
+  width: 100%;
+}
+
+.grid-parent {
+  flex-grow: 1;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.center-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items.active,
+.nav-items h3 {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

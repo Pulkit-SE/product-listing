@@ -1,0 +1,13 @@
+.wrapper{
+
+}
+
+.product-list{
+  margin-top: 48px;
+  padding: 16px;
+}
+
+.product-content{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
